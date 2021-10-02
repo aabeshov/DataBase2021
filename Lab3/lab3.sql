@@ -20,7 +20,7 @@ SELECT course.* FROM course inner join prereq on course.course_id = prereq.cours
 --a
 SELECT dept_name,AVG(salary) from instructor GROUP BY dept_name ;
 --b
-SELECT section.building,count(section.building) from classroom,section where classroom.building = section.building group by section.building order by count(section.building) desc limit 1;
+SELECT section.building,count(section.building) from section group by section.building order by count(section.building) desc limit 1;
 --c
 SELECT course.dept_name, count(dept_name) FROM course GROUP BY  dept_name order by count(dept_name) asc limit 1;
 --d
