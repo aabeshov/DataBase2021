@@ -76,6 +76,7 @@ begin
 end;
 $$;
 
+
 --task 2
 --a
 create table movie(
@@ -209,7 +210,7 @@ create trigger paswalid
 --task 4
 --a
 Create table employee(
-    id int primary key,
+    id serial primary key,
     name varchar(120),
     date_of_birth date,
     age int,
